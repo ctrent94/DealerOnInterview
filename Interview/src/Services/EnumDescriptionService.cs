@@ -11,7 +11,6 @@ namespace Services {
     /// </summary>
     public class EnumDescriptionService : IEnumDescriptionService {
 
-       
         /// <inheritdoc cref="IEnumDescriptionService.GetTaxableDescriptions"/>
         /// note this isn't typically how I would implement this, it is better to have a microservice with a DB 
         /// backing a class with the enum, an id, and a description, but I'm not going to make things overly complicated so I can present
