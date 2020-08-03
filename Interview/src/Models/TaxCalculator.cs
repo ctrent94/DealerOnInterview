@@ -23,9 +23,10 @@ namespace Models {
                 return taxableItem.PriceWithoutTax;
             }
 
-            decimal finalPriceWithTax = (taxableItem.PriceWithoutTax * taxableItem.TaxAmountAsPercent) + taxableItem.PriceWithoutTax;
 
-            return Math.Round((finalPriceWithTax * 20) /20, 2);
+            decimal taxAmount = taxableItem.PriceWithoutTax * taxableItem.TaxAmountAsPercent;
+            taxAmount = Math.Round(taxAmount / 5, 2, MidpointRounding.ToPositiveInfinity) * 5;
+            return taxAmount + taxableItem.PriceWithoutTax;
         }
 
         /// <inehritdoc cref="ITaxCalculator.DetermineTaxPercentage(Taxable)">    
