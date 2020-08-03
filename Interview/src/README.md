@@ -6,16 +6,16 @@ Developed with VS Code
 <li>VS Code</li>
 <li>Omnisharp C# extension</li>
 <li>3.1 Net Core Runtime</li>
-</li>NUNIT tests/.Net Core Test Explorer [you can find this in extensions for VSCode]</li>
+<li>NUNIT tests/.Net Core Test Explorer [you can find this in extensions for VSCode]</li>
 </ol>
 
 ###### How to run:
 
-Terminal -> new terminal, type or paste the following: 
+Terminal -> new terminal, cd to the SRC folder, type or paste the following: 
 <ol>
-<li>dotnet restore </li>
-<li>dotnet build </li>
-<li>dotnet run </li>
+<li>dotnet restore</li>
+<li>dotnet build</li>
+<li>dotnet run</li>
 </ol>
 
 ###### Design Decisions:

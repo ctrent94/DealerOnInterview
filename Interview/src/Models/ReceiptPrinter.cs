@@ -30,7 +30,7 @@ namespace Models {
 
                 totalOrderPrice += finalPriceSummation;
                 totalOrderTax += finalTaxSummation;
-                Console.WriteLine ($"item name: {group.Key}, total cost: {finalPriceSummation}, {costPerUnitDisplay}");
+                Console.WriteLine ($"Item name: {group.Key}, Total cost: {finalPriceSummation}, {costPerUnitDisplay}");
             }
             Console.WriteLine($"Sales Taxes: {totalOrderTax}");
             Console.WriteLine($"Total: {totalOrderPrice}");

@@ -7,7 +7,7 @@ namespace Models {
     /// <summary>
     /// An implementation of a taxable item.
     /// </summary>
-    public class ShoppingItem : Interfaces.IShoppingItem {
+    public class ShoppingItem : IShoppingItem {
        
         /// <summary>
         /// Constructor for a taxable item.
